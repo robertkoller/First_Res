@@ -6,8 +6,8 @@ print("you need to tell me a password with 6-16 characters, one has to be upper 
 def passw():
     x = input("tell me a password. ")
     if len(x) > 16 or len(x) < 6:
-        print("that password is too long try or too short again ")
-        ask = input("if you want to start again then type the words, try again. If not type something else.")
+        print("That password is too long or too short again ")
+        ask = input("If you want to start again, then type the words and try again. If not, type something else.")
         if ask == "try again":
             passw()
     else:
